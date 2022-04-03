@@ -59,7 +59,6 @@ calculateButton.addEventListener("click", () => {
 })
 
 calculateButton.addEventListener("click", () => {
-    debugger
     // Создаю заголовок графика
     if (!clicked2) {
         clicked2 = true
@@ -122,7 +121,6 @@ calculateButton.addEventListener("click", () => {
 
 // Слушатели событий, позволяющие увеличивать и уменьшать график, для каждого графика
 graph1.addEventListener("click", (e) => {
-    console.log("click")
     let mouseX = e.clientX
     let mouseY = e.clientY
     if (e.shiftKey) {
@@ -140,7 +138,6 @@ graph1.addEventListener("click", (e) => {
 })
 
 graph2.addEventListener("click", (e) => {
-    console.log("click")
     let mouseX = e.clientX
     let mouseY = e.clientY
     if (e.shiftKey) {
@@ -158,7 +155,6 @@ graph2.addEventListener("click", (e) => {
 })
 
 calculatedGraph.addEventListener("click", (e) => {
-    console.log("click")
     let mouseX = e.clientX
     let mouseY = e.clientY
     if (e.shiftKey) {
@@ -218,7 +214,6 @@ function addNewRow() {
             firstTable.appendChild(newRow)
             for (let i = 0; i < firstDeleteButtons.length; i++) {
                 const element = firstDeleteButtons.item(i)
-                console.log(element)
                 element.addEventListener("click", () => deleteRow(newRow))
             }
         } else {
