@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" />
+    <script defer src="index.js"></script>
+    <title>Tables</title>
+  </head>
+  <body>
+    <h1>Тестовое задание</h1>
+    <p id="instruction">
+      Чтобы увеличить график - кликните по нему, чтобы уменьшить - удерживайте
+      shift и кликните. Также график можно перетаскивать, удерживая его
+      курсором.
+    </p>
+    <div id="tables">
+      <p>Введите координаты:</p>
+      <div id="tables-container">
+        <div class="table">
+          <div id="first-table" class="row">
+            <div id="heading" class="heading">
+              <span>X</span>
+              <span>Y</span>
+            </div>
+            <div class="inputs">
+              <input class="x1" />
+              <input class="y1" />
+              <button class="first-delete-button">Delete</button>
+            </div>
+          </div>
+          <div class="row">
+            <button class="big-button add-button">Add</button>
+          </div>
+        </div>
+        <div class="table">
+          <div id="second-table" class="row">
+            <div class="heading">
+              <span>X</span>
+              <span>Y</span>
+            </div>
+            <div class="inputs">
+              <input class="x2" />
+              <input class="y2" />
+              <button class="second-delete-button">Delete</button>
+            </div>
+          </div>
+          <div class="row">
+            <button class="big-button add-button">Add</button>
+          </div>
+        </div>
+        <div class="table">
+          <div class="row" id="calculate-table-row">
+            <div class="heading">
+              <span>X</span>
+              <span>Y</span>
+            </div>
+            <div class="inputs">
+              <input class="calculatedX" />
+              <input class="calculatedY" />
+            </div>
+          </div>
+          <div class="row">
+            <button class="big-button" id="calculateButton">Calculate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="first-graph-container" class="graph-container">
+      <canvas id="graph1" class="graph" width="1200" height="900"></canvas>
+    </div>
+    <div id="second-graph-container" class="graph-container">
+      <canvas id="graph2" class="graph" width="1200" height="900"></canvas>
+    </div>
+    <div id="calculated-graph-container" class="graph-container">
+      <canvas
+        id="calculated-graph"
+        class="graph"
+        width="1200"
+        height="900"
+      ></canvas>
+    </div>
+  </body>
+</html>
